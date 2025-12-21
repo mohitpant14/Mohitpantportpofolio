@@ -1,0 +1,340 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #020806;
+  color: white;
+  overflow-x: hidden;
+}
+
+
+
+section {
+  padding: 80px 10%;
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero-right img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.subtitle {
+  margin-top: 10px;
+  opacity: 0.8;
+}
+
+.project {
+  margin-top: 20px;
+}
+/* ===== PHASE 2 HERO UPGRADE ===== */
+
+.hero-name {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+.hero-sub {
+  margin-top: 12px;
+  font-size: 1.2rem;
+  color: #cffff7;
+}
+
+.hero-sub span {
+  color: #00ffd5;
+  margin: 0 6px;
+}
+
+/* IMAGE PREMIUM GLOW */
+.hero-right img {
+  box-shadow:
+    0 0 20px rgba(0,255,213,0.4),
+    0 0 40px rgba(0,255,213,0.2);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.hero-right img:hover {
+  transform: scale(1.05);
+  box-shadow:
+    0 0 30px rgba(0,255,213,0.7),
+    0 0 60px rgba(0,255,213,0.4);
+}
+
+/* SUBTLE HERO ENTRY */
+.hero-left {
+  animation: slideInLeft 1s ease forwards;
+}
+
+.hero-right {
+  animation: slideInRight 1s ease forwards;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/* ===== SKILLS SECTION ===== */
+
+.skills {
+  background: #0f0f0f;
+}
+
+.skills h2 {
+  margin-bottom: 30px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 15px;
+}
+
+.skills-grid span {
+  padding: 12px 0;
+  text-align: center;
+  border: 1px solid #00ffd5;
+  border-radius: 25px;
+  color: #00ffd5;
+  font-size: 0.9rem;
+}
+/* ===== PROJECTS SECTION ===== */
+
+.projects {
+  background: #0b0b0b;
+}
+
+.projects h2 {
+  margin-bottom: 30px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.project-card {
+  padding: 25px;
+  background: #121212;
+  border-radius: 15px;
+  border: 1px solid rgba(0,255,213,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px rgba(0,255,213,0.3);
+}
+
+.project-card h3 {
+  color: #00ffd5;
+  margin-bottom: 10px;
+}
+
+.project-card .tech {
+  margin-top: 10px;
+  font-size: 0.85rem;
+  color: #cffff7;
+}
+/* HERO PARTICLES */
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+#particles-js {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* CONTACT CTA */
+.contact {
+  background: #0f0f0f;
+  text-align: center;
+}
+
+.contact p {
+  max-width: 600px;
+  margin: 15px auto 30px;
+  opacity: 0.85;
+}
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .hero-right img {
+    width: 200px;
+    height: 200px;
+  }
+}
+/* LOKI AURA LIGHT */
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(
+    circle,
+    rgba(0, 255, 150, 0.35),
+    rgba(0, 255, 150, 0.15),
+    transparent 70%
+  );
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  filter: blur(80px);
+  animation: lokiFloat 8s ease-in-out infinite alternate;
+  z-index: 0;
+}
+
+@keyframes lokiFloat {
+  from {
+    transform: translate(-50%, -50%) translateY(-30px);
+  }
+  to {
+    transform: translate(-50%, -50%) translateY(30px);
+  }
+}
+/* GOLD ACCENT TEXT */
+.hero-name {
+  color: #e6c35c;
+  text-shadow:
+    0 0 10px rgba(230,195,92,0.6),
+    0 0 25px rgba(230,195,92,0.4);
+}
+/* ===== LOKI MULTIVERSE BACKGROUND ===== */
+.hero::before,
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: -30%;
+  background:
+    radial-gradient(circle at 30% 40%, rgba(0,255,160,0.45), transparent 40%),
+    radial-gradient(circle at 70% 60%, rgba(0,200,120,0.35), transparent 45%),
+    radial-gradient(circle at 50% 50%, rgba(0,255,180,0.25), transparent 60%);
+  filter: blur(120px);
+  animation: multiverseMove 18s linear infinite;
+  z-index: 0;
+}
+
+.hero::after {
+  animation-direction: reverse;
+  opacity: 0.7;
+}
+
+@keyframes multiverseMove {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.15);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+/* TIMELINE WAVES */
+.hero::marker { display: none; }
+
+.hero {
+  position: relative;
+  isolation: isolate;
+}
+
+.hero::selection { background: transparent; }
+
+.hero::backdrop { display: none; }
+
+.hero .timeline {
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    120deg,
+    rgba(0,255,150,0.05),
+    rgba(0,255,150,0.05) 2px,
+    transparent 2px,
+    transparent 20px
+  );
+  animation: timelineShift 25s linear infinite;
+  z-index: 0;
+}
+
+@keyframes timelineShift {
+  from { background-position: 0 0; }
+  to { background-position: 400px 400px; }
+}
+/* LOKI MULTIVERSE CANVAS */
+#loki-canvas {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
