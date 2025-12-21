@@ -9,6 +9,7 @@ body {
   background: #020806;
   color: white;
   overflow-x: hidden;
+  padding-top: 45px;
 }
 
 
@@ -337,4 +338,77 @@ h1 {
   position: relative;
   z-index: 2;
 }
+.hero-desc {
+  max-width: 480px;
+  margin-top: 15px;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #e0fff3;
+}
+.hero-actions {
+  margin-top: 25px;
+  display: flex;
+  gap: 15px;
+}
+/* ===== WELCOME NEON BANNER ===== */
+
+.welcome-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 45px;
+  background: rgba(0, 0, 0, 0.85);
+  overflow: hidden;
+  z-index: 9999;
+  border-bottom: 1px solid rgba(0, 255, 200, 0.3);
+}
+
+.welcome-text {
+  position: absolute;
+  white-space: nowrap;
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #00ffd5;
+
+  text-shadow:
+    0 0 5px #00ffd5,
+    0 0 10px #00ffd5,
+    0 0 20px #00ffd5,
+    0 0 40px rgba(0,255,213,0.8);
+
+  animation:
+    moveRightToLeft 12s linear infinite,
+    neonBlink 1.5s infinite alternate;
+}
+
+/* RIGHT → LEFT MOVEMENT */
+@keyframes moveRightToLeft {
+  from {
+    left: 100%;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+/* BLINK / PULSE EFFECT */
+@keyframes neonBlink {
+  from {
+    opacity: 0.6;
+    text-shadow:
+      0 0 5px #00ffd5,
+      0 0 15px #00ffd5;
+  }
+  to {
+    opacity: 1;
+    text-shadow:
+      0 0 10px #00ffd5,
+      0 0 25px #00ffd5,
+      0 0 50px #00ffd5;
+  }
+}
+
+
 
