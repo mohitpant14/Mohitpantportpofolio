@@ -1,4 +1,4 @@
-// PARTICLES (HERO ONLY)
+
 particlesJS("particles-js", {
     particles: {
         number: { value: 60 },
@@ -79,4 +79,6 @@ function animate() {
 }
 
 animate();
+
+
 
