@@ -1,0 +1,24 @@
+/* ===== GLOBAL NEON THEME ===== */
+body {
+  background: radial-gradient(circle at top, #06131a, #02090d);
+  color: #e0fff6;
+}
+
+/* text glow add only */
+h1, h2, h3 {
+  text-shadow: 0 0 10px #00ff9c;
+}
+
+/* buttons upgrade */
+button, .btn {
+  background: transparent;
+  border: 2px solid #00ff9c;
+  color: #00ff9c;
+  box-shadow: 0 0 15px #00ff9c;
+  transition: 0.3s;
+}
+button:hover, .btn:hover {
+  background: #00ff9c;
+  color: #000;
+  box-shadow: 0 0 30px #00ff9c;
+}
