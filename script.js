@@ -95,3 +95,35 @@ const projectObserver = new IntersectionObserver(
 );
 
 projectCards.forEach(card => projectObserver.observe(card));
+const form = document.getElementById("reviewForm");
+const reviewsContainer = document.getElementById("userReviews");
+
+function loadReviews() {
+  const reviews = JSON.parse(localStorage.getItem("reviews")) || [];
+  reviewsContainer.innerHTML = "";
+  reviews.forEach(r => {
+    reviewsContainer.innerHTML += `
+      <div class="user-review-card">
+        <h4>${r.name}</h4>
+        <p>${r.review}</p>
+      </div>
+    `;
+  });
+}
+
+form.addEventListener("submit", e => {
+  e.preventDefault();
+
+  const name = document.getElementById("name").value;
+  const review = document.getElementById("review").value;
+
+  const reviews = JSON.parse(localStorage.getItem("reviews")) || [];
+  reviews.push({ name, review });
+
+  localStorage.setItem("reviews", JSON.stringify(reviews));
+  form.reset();
+  loadReviews();
+});
+
+loadReviews();
+
