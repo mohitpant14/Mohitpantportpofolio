@@ -126,4 +126,23 @@ form.addEventListener("submit", e => {
 });
 
 loadReviews();
+// count visits
+let visits = localStorage.getItem("visitCount");
+visits = visits ? parseInt(visits) + 1 : 1;
+localStorage.setItem("visitCount", visits);
 
+// check owner mode
+const params = new URLSearchParams(window.location.search);
+const isOwner = params.get("owner") === "true";
+
+if (isOwner) {
+  const notice = document.getElementById("ownerNotice");
+  notice.style.display = "block";
+  notice.innerText = `👀 ${visits} people have seen your portfolio`;
+}
+let views = localStorage.getItem("portfolioViews");
+views = views ? parseInt(views) + 1 : 1;
+localStorage.setItem("portfolioViews", views);
+
+const viewEl = document.getElementById("viewCount");
+if (viewEl) viewEl.innerText = views;
