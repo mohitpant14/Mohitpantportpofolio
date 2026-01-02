@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="style.css">
 
     <link rel="stylesheet" href="advanced.css">
-    
 
 </head>
 
@@ -52,37 +51,37 @@
     </section>
 
     <section class="about">
-  <div class="about-bg"></div>
+        <div class="about-bg"></div>
 
-  <div class="about-card">
-    <h2>About Me</h2>
+        <div class="about-card">
+            <h2>About Me</h2>
 
-    <p>
-      I am Mohit Pant, a 2nd Year B.Tech student from Uttarakhand Technical University.
-      I belong to Pithoragarh, Uttarakhand and I am passionate about web development
-      and building real-world projects.
-    </p>
+            <p>
+                I am Mohit Pant, a 2nd Year B.Tech student from Uttarakhand Technical University.
+                I belong to Pithoragarh, Uttarakhand and I am passionate about web development
+                and building real-world projects.
+            </p>
 
-    <p>
-      I started my journey in technology with curiosity and gradually developed a
-      strong interest in frontend and backend development. I enjoy learning by
-      building projects and solving real problems.
-    </p>
+            <p>
+                I started my journey in technology with curiosity and gradually developed a
+                strong interest in frontend and backend development. I enjoy learning by
+                building projects and solving real problems.
+            </p>
 
-    <p>
-      My goal is to grow as a software developer, gain industry experience, and
-      contribute to impactful projects while continuously improving my skills.
-    </p>
+            <p>
+                My goal is to grow as a software developer, gain industry experience, and
+                contribute to impactful projects while continuously improving my skills.
+            </p>
 
-    <div class="about-logos">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg">
-    </div>
-  </div>
-</section>
+            <div class="about-logos">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg">
+            </div>
+        </div>
+    </section>
 
     </section>
     <section class="skills">
@@ -136,7 +135,7 @@
         <h2>Projects</h2>
 
         <div class="projects-grid cinematic">
-            
+
 
 
             <div class="project-card">
@@ -228,9 +227,108 @@
             </div>
 
 
+
         </div>
     </section>
-    </section>
+    <div id="certModal" class="cert-modal" onclick="closeCert()">
+  <img id="certImg">
+</div>
+
+<!-- ===== TIMELINE ===== -->
+<section class="timeline-section">
+  <h2 class="timeline-title">🚀 My Journey</h2>
+
+  <div class="timeline">
+    <div class="timeline-item">
+      <span>2024-2028</span>
+      <p>B.Tech (CSE)</p>
+    </div>
+    <div class="timeline-item">
+      <span>2024</span>
+      <p>Web Development Projects</p>
+    </div>
+    <div class="timeline-item">
+      <span>2025</span>
+      <p>AI / ML Learning & Mini Projects</p>
+    </div>
+    <div class="timeline-item">
+      <span>2025</span>
+      <p>Portfolio & Advanced Projects</p>
+    </div>
+  </div>
+</section>
+    <section class="achievements-section">
+  <h2 class="achievements-title">🏆 Achievements & Certifications</h2>
+
+  <div class="achievements-container">
+    <div class="achievement-card">
+      <h3>🎓 B.Tech (CSE)</h3>
+      <p>AKIT Tanakpur</p>
+    </div>
+
+    <div class="achievement-card">
+      <h3>💻 Web Development</h3>
+      <p>HTML, CSS, JavaScript Projects</p>
+    </div>
+
+    <div class="achievement-card">
+      <h3>🤖 AI / ML Basics</h3>
+      <p>Mini Projects & Models</p>
+    </div>
+
+    <div class="achievement-card">
+      <h3>📜 Certifications</h3>
+      <p>Online Courses & Workshops</p>
+    </div>
+  </div>
+  <!-- ===== CERTIFICATES GRID ===== -->
+<div class="certificates-section">
+  <h3 class="sub-title">📜 Certificates</h3>
+
+  <div class="cert-grid">
+    <img src="assets/images/cert1.jpg" alt="Certificate 1" onclick="openCert(this.src)">
+    <img src="assets/images/cert2.png" alt="Certificate 2" onclick="openCert(this.src)">
+    <img src="assets/images/cert3.png" alt="Certificate 3" onclick="openCert(this.src)">
+  </div>
+</div>
+
+<!-- popup -->
+
+
+<!-- ===== RESUME CTA ===== -->
+<section class="resume-section">
+  <h2>📄 Download My Resume</h2>
+  <a href="resume.pdf" download class="resume-btn">Download Resume</a>
+</section>
+
+</section>
+
+    <section class="stats-section">
+  <h2 class="stats-title">📊 Portfolio Insights</h2>
+
+  <div class="stats-container">
+    <div class="stat-box">
+      <span id="viewCount">0</span>
+      <p>Views</p>
+    </div>
+
+    <div class="stat-box">
+      <span>6+</span>
+      <p>Projects</p>
+    </div>
+
+    <div class="stat-box">
+      <span>10+</span>
+      <p>Skills</p>
+    </div>
+
+    <div class="stat-box">
+      <span>2025</span>
+      <p>Last Updated</p>
+    </div>
+  </div>
+</section>
+
     <section class="reviews-section">
         <h2 class="reviews-title">💬 What People Say</h2>
 
@@ -259,16 +357,16 @@
         </div>
     </section>
     <section class="user-review-section">
-  <h2 class="review-title">📝 Leave a Review</h2>
+        <h2 class="review-title">📝 Leave a Review</h2>
 
-  <form id="reviewForm" class="review-form">
-    <input type="text" id="name" placeholder="Your Name" required>
-    <textarea id="review" placeholder="Write your review..." required></textarea>
-    <button type="submit">Submit Review</button>
-  </form>
+        <form id="reviewForm" class="review-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <textarea id="review" placeholder="Write your review..." required></textarea>
+            <button type="submit">Submit Review</button>
+        </form>
 
-  <div id="userReviews" class="user-reviews"></div>
-</section>
+        <div id="userReviews" class="user-reviews"></div>
+    </section>
 
 
 
@@ -290,8 +388,12 @@
 
 
 
+
+    <div id="ownerNotice" class="owner-notice"></div>
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+
 
 </body>
 
