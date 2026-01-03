@@ -462,3 +462,117 @@ button:hover, .btn:hover {
     0 0 25px #ff0096,
     0 0 40px #00c8ff;
 }
+/* ===== AVAILABILITY STATUS ===== */
+.availability-section {
+  padding: 60px 10%;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(135deg, #02090d, #050014);
+}
+
+.availability-box {
+  padding: 25px 40px;
+  border-radius: 20px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(0, 200, 255, 0.6);
+  box-shadow:
+    0 0 20px rgba(0, 200, 255, 0.4),
+    0 0 30px rgba(255, 0, 150, 0.4);
+}
+
+.status-dot {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #00ff9c;
+  margin-bottom: 10px;
+  box-shadow: 0 0 10px #00ff9c;
+}
+
+.availability-box h3 {
+  color: #00e5ff;
+  margin: 10px 0 5px;
+}
+
+.availability-box p {
+  color: #e0fff6;
+  font-size: 0.9rem;
+}
+/* ===== GET IN TOUCH UPGRADE ===== */
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  margin: 40px 0;
+  flex-wrap: wrap;
+}
+
+.contact-item {
+  width: 90px;
+  height: 90px;
+  border-radius: 18px;
+  text-decoration: none;
+  color: #e0fff6;
+  font-size: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(0,200,255,0.6);
+
+  box-shadow:
+    0 0 15px rgba(255,0,150,0.4),
+    0 0 25px rgba(0,200,255,0.4);
+
+  transition: 0.35s ease;
+}
+
+.contact-item span {
+  font-size: 0.75rem;
+  margin-top: 6px;
+  color: #00e5ff;
+}
+
+.contact-item:hover {
+  transform: translateY(-10px) scale(1.1);
+  box-shadow:
+    0 0 30px #ff0096,
+    0 0 45px #00c8ff;
+}
+
+/* line text */
+.contact-line {
+  text-align: center;
+  color: #e0fff6;
+  margin-top: 20px;
+  font-size: 1rem;
+}
+
+/* CTA button */
+.contact-cta {
+  display: inline-block;
+  margin-top: 35px;
+  padding: 14px 36px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #000;
+
+  background: linear-gradient(135deg, #ff0096, #00c8ff);
+
+  box-shadow:
+    0 0 25px #ff0096,
+    0 0 40px #00c8ff;
+
+  transition: 0.3s;
+}
+
+.contact-cta:hover {
+  transform: scale(1.1);
+}
