@@ -423,3 +423,42 @@ button:hover, .btn:hover {
 .resume-btn:hover {
   transform: scale(1.1);
 }
+/* ===== WHY HIRE ME ===== */
+.why-hire-section {
+  padding: 80px 10%;
+  background: linear-gradient(135deg, #02090d, #050014);
+  text-align: center;
+}
+
+.why-hire-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: #00e5ff;
+  text-shadow: 0 0 12px #ff0096;
+}
+
+.why-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.why-card {
+  padding: 22px;
+  border-radius: 16px;
+  font-size: 1rem;
+  color: #e0fff6;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(0, 200, 255, 0.6);
+  box-shadow:
+    0 0 15px rgba(255, 0, 150, 0.4),
+    0 0 25px rgba(0, 200, 255, 0.4);
+  transition: 0.3s;
+}
+
+.why-card:hover {
+  transform: translateY(-8px);
+  box-shadow:
+    0 0 25px #ff0096,
+    0 0 40px #00c8ff;
+}
